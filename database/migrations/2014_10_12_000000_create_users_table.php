@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('no_telp', 15);
             $table->string('email')->unique();
             $table->enum('jenis_kelamin', ['L','P']);
-            $table->enum('kategori', ['Member', 'Admin', 'Sales', 'Karyawan', 'Trainer', 'Super Admin']);
+            $table->enum('kategori', ['Admin', 'Karyawan', 'Super Admin']);
             $table->string('refferal_code')->unique()->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');

@@ -53,7 +53,19 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    public function getLocationIDfromUsers(){
-        return $this->hasMany(User::class, 'locationID', 'locationID');
+    public function getLocationIDfromLocation1(){
+        return $this->belongsTo(User::class, 'locationID', 'locationID');
+    }
+
+    public function setUserIDforTrafficLogin(){
+        return $this->hasMany(TrafficLogin::class, 'userID', 'trafficID');
+    }
+
+    public function setUserIDforKarir(){
+        return $this->hasMany(Karir::class, 'userID', 'karirID');
+    }
+
+    public function setUserIDforKarirFileSubmit(){
+        return $this->hasMany(SubmitFileKarir::class, 'userID', 'fileKarirID');
     }
 }

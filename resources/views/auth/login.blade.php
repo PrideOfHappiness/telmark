@@ -18,7 +18,7 @@ License: For each use you must have a valid license purchased only from above li
 <!-- Mirrored from preview.keenthemes.com/metronic8/demo1/authentication/layouts/overlay/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Jan 2024 13:13:51 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-        <title>Metronic - The World's #1 Selling Bootstrap Admin Template - Metronic by KeenThemes</title>
+        <title>Login</title>
         <meta charset="utf-8"/>
         <meta name="description" content="
             The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, 
@@ -123,18 +123,10 @@ License: For each use you must have a valid license purchased only from above li
             <img class="theme-dark-show mx-auto mw-100 w-150px w-lg-300px mb-10 mb-lg-20" src="{{ asset('metronic/assets/media/auth/logo-smallx2.png')}}" alt=""/>                 
             <!--end::Image-->
 
-            <!--begin::Title-->
-            <h1 class="text-gray-800 fs-2qx fw-bold text-center mb-7"> 
-                Selamat Datang di Telmark
-            </h1>  
+            <!--begin::Title-->  
             <!--end::Title-->
 
             <!--begin::Text-->
-            <div class="text-gray-600 fs-base text-center fw-semibold">
-                Sejak didirikan pada tahun 2016, PT. Telmark Integrasi Indonesia kini merupakan perusahaan Business Process Outsourcing (BPO) dengan pertumbuhan tercepat di Indonesia. Keahlian kami dalam Business Process Outsourcing (BPO)
-                akan mengambil alih bisnis non-inti Anda, sehingga anda tidak perlu khawatir dan dapat fokus pada bisnis utama anda. Kami akan bertanggung jawab untuk menyediakan seluruh kebutuhan anda mulai dari sumber daya manusia, teknologi,
-                system dan seluruh fasilitas pendukung yang dibutuhkan untuk mendukung pelaksanaan Layanan BPO.
-            </div>
             <!--end::Text-->
         </div>
         <!--end::Content-->
@@ -151,7 +143,8 @@ License: For each use you must have a valid license purchased only from above li
                 <div class="d-flex flex-center flex-column flex-column-fluid pb-15 pb-lg-20">
                     
 <!--begin::Form-->
-<form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" data-kt-redirect-url="/metronic8/demo1/../demo1/index.html" action="#">
+<form class="form w-100" action="{{ route('login')}}" method="POST">
+    @csrf
     <!--begin::Heading-->
     <div class="text-center mb-11">
         <!--begin::Title-->
@@ -204,7 +197,7 @@ License: For each use you must have a valid license purchased only from above li
     <!--begin::Input group--->
     <div class="fv-row mb-8">
         <!--begin::Email-->
-        <input type="text" placeholder="Email" name="email" autocomplete="off" class="form-control bg-transparent"/> 
+        <input type="text" placeholder="User ID atau Email" name="userID_email" id="userID_email" autocomplete="off" class="form-control bg-transparent"/> 
         <!--end::Email-->
     </div>
 
