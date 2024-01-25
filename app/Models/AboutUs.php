@@ -13,9 +13,9 @@ class AboutUs extends Model
     public $incrementing = false;
 
     protected $fillable = [
-        'companyOverview',
-        'visi',
-        'misi',
-        'featured',
+        'aboutUsID',
+        'jenis_data',
+        'judul',
+        'data',
     ];
 }

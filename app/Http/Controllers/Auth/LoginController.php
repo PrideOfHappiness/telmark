@@ -64,7 +64,8 @@ class LoginController extends Controller
                     ->with('error','Maaf, Email dan/atau Password anda salah atau belum terdaftar.');
             }
         }elseif($login){
-            event(new catatDataLogin($login));
+            $user2 = Auth::user();
+            event(new catatDataLogin($user2->userID));
             if(Auth::user()->kategori == "Admin"){
                 return redirect()->route("adminHome");
             }elseif(Auth::user()->kategori == "Karyawan"){

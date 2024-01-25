@@ -11,7 +11,7 @@ class LogoutController extends Controller
     public function logout(Request $request){
         $user = Auth::user();
         if($user){
-            event(new catatDataLogout($user));
+            event(new catatDataLogout($user->userID));
         }
         $request->session()->invalidate();
         $request->session()->regenerateToken();

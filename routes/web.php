@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\KontakController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LogoutController;
@@ -16,7 +18,7 @@ use App\Http\Controllers\LogoutController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth/login');
 });
 
 Route::get('/login', function () {
@@ -31,6 +33,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::middleware(['Admin'])->group(function () {
     Route::get('/admin/home', [HomeController::class, 'adminHome'])->name('adminHome');
+    //Location
+    Route::resource('admin/location', KontakController::class);
+    Route::post('/admin/location/cari/hasil', [KontakController::class, 'cari'])->name('cariLokasi');
+    //About Us
+    Route::resource('admin/aboutUs', AboutUsController::class);
 });
 
 Route::middleware(['Super Admin'])->group(function () {
@@ -44,6 +51,7 @@ Route::middleware(['Karyawan'])->group(function () {
 Route::middleware(['auth'])->group(function() {
     Route::get('/logout', [LogoutController::class, 'logout'])->name('logout');
 });
+
 
 
 

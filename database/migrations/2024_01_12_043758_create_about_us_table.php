@@ -13,10 +13,9 @@ return new class extends Migration
     {
         Schema::create('about_us', function (Blueprint $table) {
             $table->string('aboutUsID', 10)->primary();
-            $table->text('companyOverview');
-            $table->text('visi');
-            $table->text('misi');
-            $table->text('featured');
+            $table->enum('jenis_data', ['Overview', 'Visi', 'Misi', 'Featured']);
+            $table->string('judul')->nullable();
+            $table->text('data');
             $table->timestamps();
         });
     }

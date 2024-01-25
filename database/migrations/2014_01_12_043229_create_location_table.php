@@ -17,7 +17,8 @@ return new class extends Migration
             $table->string('alamat');
             $table->string('no_telp', 20);
             $table->string('email');
-            $table->string('url_maps');
+            $table->text('url_maps')->nullable();
+            $table->enum('status', ['Cabang', 'Dummy', 'Pusat']);
             $table->timestamps();
         });
     }

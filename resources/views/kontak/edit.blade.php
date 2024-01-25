@@ -19,7 +19,7 @@ License: For each use you must have a valid license purchased only from above li
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
 <head>
-    <title>Dashboard Admin</title>
+    <title>Edit Lokasi Cabang</title>
     <meta charset="utf-8" />
     <meta name="description" content="
             The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, 
@@ -39,7 +39,7 @@ License: For each use you must have a valid license purchased only from above li
     <meta property="og:url" content="https://keenthemes.com/metronic" />
     <meta property="og:site_name" content="Metronic by Keenthemes" />
     <link rel="canonical" href="{{asset('metronic/index.html')}}" />
-    <link rel="shortcut icon" href="{{ asset('metronic/assets/media/logos/favicon.ico')}}" />
+    <link rel="shortcut icon" href="{{ asset('metronic/assets/media/logos/logo-smallx2-white.png')}}" />
 
     <!--begin::Fonts(mandatory for all pages)-->
     <link rel="stylesheet" href="../../../fonts.googleapis.com/css7b91.css?family=Inter:300,400,500,600,700" /> <!--end::Fonts-->
@@ -334,10 +334,10 @@ License: For each use you must have a valid license purchased only from above li
                     <!--begin::Logo-->
                     <div class="app-sidebar-logo px-6" id="kt_app_sidebar_logo">
                         <!--begin::Logo image-->
-                        <a href="/karyawan/home">
-                            <img alt="Logo" src="{{ asset('metronic/assets/media/logos/default-dark.svg')}}" class="h-25px app-sidebar-logo-default" />
+                        <a href="/admin/home">
+                            <img alt="Logo" src="{{ asset('metronic/assets/media/logos/logo-smallx2-white.png')}}" class="h-25px app-sidebar-logo-default" />
 
-                            <img alt="Logo" src="{{ asset('metronic/assets/media/logos/default-small.svg')}}" class="h-20px app-sidebar-logo-minimize" />
+                            <img alt="Logo" src="{{ asset('metronic/assets/media/logos/logo-smallx2-white.png')}}" class="h-20px app-sidebar-logo-minimize" />
                         </a>
                         <!--end::Logo image-->
 
@@ -369,12 +369,33 @@ License: For each use you must have a valid license purchased only from above li
                                     <div class="menu-item pt-5"><!--begin:Menu content-->
                                         <div class="menu-content"><span class="menu-heading fw-bold text-uppercase fs-7">Data-data</span></div><!--end:Menu content-->
                                     </div><!--end:Menu item--><!--begin:Menu item-->
-                                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion"><!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="fa-solid fa-angles-up"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i></span><span class="menu-title">Karir</span><span class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
+                                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion"><!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="fa-solid fa-location-dot"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i></span><span class="menu-title">Lokasi / Cabang</span><span class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
                                         <div class="menu-sub menu-sub-accordion"><!--begin:Menu item-->
-                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="/admin/location"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Lihat daftar karir</span></a><!--end:Menu link--></div><!--end:Menu item--><!--begin:Menu item-->
-                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="{{asset('metronic/pages/user-profile/projects.html')}}"  ><span  class="menu-bullet" ><span class="bullet bullet-dot"></span></span><span  class="menu-title" >Tambah Data karir anda</span></a><!--end:Menu link--></div><!--end:Menu item--><!--begin:Menu item-->
+                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="/admin/location"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Lihat data Cabang</span></a><!--end:Menu link--></div><!--end:Menu item--><!--begin:Menu item-->
+                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="{{ route('location.create') }}"  ><span  class="menu-bullet" ><span class="bullet bullet-dot"></span></span><span  class="menu-title" >Tambah Data Cabang</span></a><!--end:Menu link--></div><!--end:Menu item--><!--begin:Menu item-->
                                         </div><!--end:Menu sub-->
                                     </div><!--end:Menu item--><!--begin:Menu item-->
+                                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion"><!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="fa-solid fa-bell-concierge"><span class="path1"></span><span class="path2"></span></i></span><span class="menu-title">Layanan (TBA)</span><span class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
+                                        <div class="menu-sub menu-sub-accordion"><!--begin:Menu item-->
+                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="{{asset('metronic/pages/social/feeds.html')}}"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Lihat Layanan</span></a><!--end:Menu link--></div><!--end:Menu item--><!--begin:Menu item-->
+                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="{{asset('metronic/pages/social/activity.html')}}"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Tambah Layanan</span></a><!--end:Menu link--></div><!--end:Menu item--><!--begin:Menu item-->
+                                        </div><!--end:Menu sub-->
+                                    </div><!--end:Menu item--><!--begin:Menu item-->
+                                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion"><!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="fa-solid fa-address-card"><span class="path1"></span><span class="path2"></span></i></span><span class="menu-title">Tentang Kami</span><span class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
+                                        <div class="menu-sub menu-sub-accordion menu-active-bg"><!--begin:Menu item-->
+                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="{{asset('metronic/pages/blog/home.html')}}"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Gambaran Umum Perusahaan</span></a><!--end:Menu link--></div><!--end:Menu item--><!--begin:Menu item-->
+                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="{{asset('metronic/pages/blog/post.html')}}"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Visi Perusahaan</span></a><!--end:Menu link--></div><!--end:Menu item-->
+                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="{{asset('metronic/pages/blog/home.html')}}"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Misi Perusahaan</span></a><!--end:Menu link--></div><!--end:Menu item--><!--begin:Menu item-->
+                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="{{asset('metronic/pages/blog/post.html')}}"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Keunggulan Perusahaan</span></a><!--end:Menu link--></div><!--end:Menu item-->
+                                        </div><!--end:Menu sub-->
+                                    </div><!--end:Menu item--><!--begin:Menu item-->
+                                    <!--begin:Menu item-->
+                                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion"><!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="fa-solid fa-person"><span class="path1"></span><span class="path2"></span></i></span><span class="menu-title">Anggota</span><span class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
+                                        <div class="menu-sub menu-sub-accordion menu-active-bg"><!--begin:Menu item-->
+                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="{{asset('metronic/pages/blog/home.html')}}"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Lihat Anggota</span></a><!--end:Menu link--></div><!--end:Menu item--><!--begin:Menu item-->
+                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="{{asset('metronic/pages/blog/post.html')}}"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">tambah Anggota</span></a><!--end:Menu link--></div><!--end:Menu item-->
+                                        </div><!--end:Menu sub-->
+                                    </div><!--end:Menu item-->
                                 </div>
                                 <!--end::Menu-->
                             </div>
@@ -406,7 +427,7 @@ License: For each use you must have a valid license purchased only from above li
                                 <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3 ">
                                     <!--begin::Title-->
                                     <h1 class="page-heading d-flex text-gray-900 fw-bold fs-3 flex-column justify-content-center my-0">
-                                        Disini akan diisi konten untuk dashboard Karyawan
+                                        Ubah Data Lokasi Cabang
                                     </h1>
                                     <!--end::Title-->
 
@@ -422,8 +443,179 @@ License: For each use you must have a valid license purchased only from above li
                         <!--end::Toolbar-->
 
                         <!--begin::Content-->
-                        <!--end::Content-->
+                        <div class="card card-flush h-lg-100" id="kt_contacts_main">
+                            <!--begin::Card header-->
+                            <div class="card-header pt-7" id="kt_chat_contacts_header">
+                                <!--begin::Card title-->
+                                <div class="card-title">
+                                    <i class="fa-solid fa-location-dot"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>            
+                                    <h2>&nbsp Ubah Data Lokasi {{ $data->namaCabang }}</h2>
+                                </div>
+                                <!--end::Card title-->
+                            </div>
 
+                            <!--begin::Card body-->
+                            <div class="card-body pt-5">
+                                <!--begin::Form-->
+                                <form id="kt_ecommerce_settings_general_form" class="form" action="{{ route('location.update', $data->locationID) }}" method="post">
+                                    @csrf
+                                    @method('PUT')
+                                    <!--begin::Input group-->
+                                    <input type="hidden" name="locationID" id="locationID" value="{{ $data->locationID }}">
+                                    <div class="fv-row mb-7">
+                                        <!--begin::Label-->
+                                        <label class="fs-6 fw-semibold form-label mt-3">
+                                            <span class="required">Nama Cabang</span>
+                        
+                                            <span class="ms-1" data-bs-toggle="tooltip" title="Masukkan nama cabang baru.">
+                                                <i class="fa-solid fa-circle-info"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>                    </span>
+                                        </label>
+                                        <!--end::Label-->
+                        
+                                        <!--begin::Input-->
+                                        <input type="text" class="form-control form-control-solid" name="nama" value="{{ $data->namaCabang }}" />
+                                        <!--end::Input-->
+                                    </div>
+                                    <!--end::Input group-->
+                                    <div class="fv-row mb-7">
+                                        <!--begin::Label-->
+                                        <label class="fs-6 fw-semibold form-label mt-3">
+                                            <span class="required">Alamat</span>
+                        
+                                            <span class="ms-1" data-bs-toggle="tooltip" title="Masukkan alamat cabang. ">
+                                                <i class="fa-solid fa-circle-info"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>                    
+                                            </span>
+                                        </label>
+                                        <!--end::Label-->
+                        
+                                        <!--begin::Input-->
+                                        <textarea class="form-control form-control-solid" name="alamat">{{ $data->alamat }}</textarea>
+                                        <!--end::Input-->
+                                    </div>
+                                    <!--end::Input group-->
+                                    <!--begin::Row-->
+                                    <div class="row row-cols-1 row-cols-sm-2 rol-cols-md-1 row-cols-lg-2">
+                                        <!--begin::Col-->
+                                        <div class="col">
+                                            <!--begin::Input group-->
+                                            <div class="fv-row mb-7">
+                                                <!--begin::Label-->
+                                                <label class="fs-6 fw-semibold form-label mt-3">
+                                                    <span class="required">Email</span>
+
+                                                    <span class="ms-1" data-bs-toggle="tooltip" title="Masukkan email cabang.">
+                                                        <i class="fa-solid fa-circle-info"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>                            </span>
+                                                </label>
+                                                <!--end::Label-->
+
+                                                <!--begin::Input-->
+                                                <input type="email" class="form-control form-control-solid" name="email" value="{{ $data->email }}" />
+                                                <!--end::Input-->
+                                            </div>
+                                            <!--end::Input group-->
+
+                                        </div>
+                                        <!--end::Col-->
+
+                                        <!--begin::Col-->
+                                        <div class="col">
+                                            <!--begin::Input group-->
+                                            <div class="fv-row mb-7">
+                                                <!--begin::Label-->
+                                                <label class="fs-6 fw-semibold form-label mt-3">
+                                                    <span class="required">Nomor Telepon</span>
+
+                                                    <span class="ms-1" data-bs-toggle="tooltip" title="Masukkan nomor telepon cabang.">
+                                                        <i class="fa-solid fa-circle-info"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>                            
+                                                    </span>
+                                                </label>
+                                                <!--end::Label-->
+
+                                                <!--begin::Input-->
+                                                <input type="text" class="form-control form-control-solid" name="no_telp" value="{{ $data->no_telp }}" />
+                                                <!--end::Input-->
+                                            </div>
+                                            <!--end::Input group-->
+                                        </div>
+                                        <!--end::Col-->
+                                    </div>
+                                    <!--end::Row-->
+                                    <!--begin::row-->
+                                    <div class="row row-cols-1 row-cols-sm-2 rol-cols-md-1 row-cols-lg-2">
+                                        <!--begin::Col-->
+                                        <div class="col">
+                                            <!--begin::Input group-->
+                                            <div class="fv-row mb-7">
+                                                <!--begin::Label-->
+                                                <label class="fs-6 fw-semibold form-label mt-3">
+                                                    <span class="required">Status Lokasi</span>
+                        
+                                                    <span class="ms-1" data-bs-toggle="tooltip" title="Pilih status lokasi.">
+                                                        <i class="fa-solid fa-circle-info"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>                            </span>
+                                                </label>
+                                                <!--end::Label-->
+                        
+                                                <!--begin::Input-->
+                                                <div class="w-100">
+                                                    <!--begin::Select2-->
+                                                    <select id="status" class="form-select form-select-solid" name="status" data-placeholder="Silahkan pilih status lokasi">
+                                                        <option value="{{ $data->status }}">{{ $data->status }}</option>
+                                                        <option value="cabang">
+                                                            Cabang                                    
+                                                        </option>
+                                                        <option value="pusat">
+                                                            Pusat                                    
+                                                        </option>
+                                                        <option value="dummy" >
+                                                            Dummy  
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="fv-row mb-7">
+                                                <label class="fs-6 fw-semibold form-label mt-3">
+                                                    <span>URL Lokasi Google Maps</span>
+                                
+                                                    <span class="ms-1" data-bs-toggle="tooltip" title="Masukkan URL lokasi dari Google Maps. Petunjuk penggunaan: Ambil lokasi yang diinginkan, pilih bagikan, pilih sematkan peta, dan kopi URL dalam iframe src sampai petik dua URL berakhir">
+                                                        <i class="fa-solid fa-circle-info"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>                    
+                                                    </span>
+                                                </label>
+                                                <!--end::Label-->
+                                
+                                                <!--begin::Input-->
+                                                <input type="text" class="form-control form-control-solid" name="urlMaps" value="{{ $data->url_maps }}" />
+                                                <br>
+                                                <h6>Lokasi Awal</h6>
+                                                <iframe src="{{ $data->url_maps }}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                <!--end::Input-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end::Row-->
+                                <!--end::Input group-->
+                                <div class="d-flex justify-content-end">
+                                    <!--begin::Button-->
+                                    <button type="reset" data-kt-contacts-type="cancel" class="btn btn-light me-3">
+                                        Batal
+                                    </button>
+                                    <!--end::Button-->
+                    
+                                    <!--begin::Button-->
+                                    <button type="submit" data-kt-contacts-type="submit" class="btn btn-primary">
+                                        <span class="indicator-label">
+                                        Simpan Data
+                                        </span>
+                                    </button>
+                                    <!--end::Button-->
+                                </div>
+                                <!--end::Action buttons-->
+                                </form>
+                                <!--end::Content-->
+                            </div>
+                        </div>
                     </div>
                     <!--end::Content wrapper-->
 

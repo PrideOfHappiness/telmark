@@ -38,7 +38,7 @@ License: For each use you must have a valid license purchased only from above li
         <meta property="og:url" content="https://keenthemes.com/metronic"/>
         <meta property="og:site_name" content="Metronic by Keenthemes" />
         <link rel="canonical" href="{{ asset('metronic/index.html') }}"/>
-        <link rel="shortcut icon" href="{{ asset('metronic/assets/media/logos/favicon.ico') }}"/>
+        <link rel="shortcut icon" href="{{ asset('metronic/assets/media/logos/logo-smallx2-white.png') }}"/>
 
         <!--begin::Fonts(mandatory for all pages)-->
         <link rel="stylesheet" href="../../../../../../fonts.googleapis.com/css7b91.css?family=Inter:300,400,500,600,700"/>        <!--end::Fonts-->

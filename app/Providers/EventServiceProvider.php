@@ -18,6 +18,12 @@ class EventServiceProvider extends ServiceProvider
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
+        'App\Events\catatDataLogin' => [
+            'App\Listeners\Login',
+        ],
+        'App\Events\catatDataLogout' => [
+            'App\Listeners\Logout',
+        ],
     ];
 
     /**

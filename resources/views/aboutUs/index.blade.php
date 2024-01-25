@@ -19,7 +19,7 @@ License: For each use you must have a valid license purchased only from above li
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
 <head>
-    <title>Dashboard Admin</title>
+    <title>Tentang Telmark</title>
     <meta charset="utf-8" />
     <meta name="description" content="
             The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, 
@@ -39,7 +39,7 @@ License: For each use you must have a valid license purchased only from above li
     <meta property="og:url" content="https://keenthemes.com/metronic" />
     <meta property="og:site_name" content="Metronic by Keenthemes" />
     <link rel="canonical" href="{{asset('metronic/index.html')}}" />
-    <link rel="shortcut icon" href="{{ asset('metronic/assets/media/logos/favicon.ico')}}" />
+    <link rel="shortcut icon" href="{{ asset('metronic/assets/media/logos/logo-smallx2-white.png')}}" />
 
     <!--begin::Fonts(mandatory for all pages)-->
     <link rel="stylesheet" href="../../../fonts.googleapis.com/css7b91.css?family=Inter:300,400,500,600,700" /> <!--end::Fonts-->
@@ -334,10 +334,10 @@ License: For each use you must have a valid license purchased only from above li
                     <!--begin::Logo-->
                     <div class="app-sidebar-logo px-6" id="kt_app_sidebar_logo">
                         <!--begin::Logo image-->
-                        <a href="/karyawan/home">
-                            <img alt="Logo" src="{{ asset('metronic/assets/media/logos/default-dark.svg')}}" class="h-25px app-sidebar-logo-default" />
+                        <a href="/admin/home">
+                            <img alt="Logo" src="{{ asset('metronic/assets/media/logos/logo-smallx2-white.png')}}" class="h-25px app-sidebar-logo-default" />
 
-                            <img alt="Logo" src="{{ asset('metronic/assets/media/logos/default-small.svg')}}" class="h-20px app-sidebar-logo-minimize" />
+                            <img alt="Logo" src="{{ asset('metronic/assets/media/logos/logo-smallx2-white.png')}}" class="h-20px app-sidebar-logo-minimize" />
                         </a>
                         <!--end::Logo image-->
 
@@ -369,12 +369,31 @@ License: For each use you must have a valid license purchased only from above li
                                     <div class="menu-item pt-5"><!--begin:Menu content-->
                                         <div class="menu-content"><span class="menu-heading fw-bold text-uppercase fs-7">Data-data</span></div><!--end:Menu content-->
                                     </div><!--end:Menu item--><!--begin:Menu item-->
-                                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion"><!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="fa-solid fa-angles-up"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i></span><span class="menu-title">Karir</span><span class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
+                                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion"><!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="fa-solid fa-location-dot"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i></span><span class="menu-title">Lokasi / Cabang</span><span class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
                                         <div class="menu-sub menu-sub-accordion"><!--begin:Menu item-->
-                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="/admin/location"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Lihat daftar karir</span></a><!--end:Menu link--></div><!--end:Menu item--><!--begin:Menu item-->
-                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="{{asset('metronic/pages/user-profile/projects.html')}}"  ><span  class="menu-bullet" ><span class="bullet bullet-dot"></span></span><span  class="menu-title" >Tambah Data karir anda</span></a><!--end:Menu link--></div><!--end:Menu item--><!--begin:Menu item-->
+                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="/admin/location"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Lihat data Cabang</span></a><!--end:Menu link--></div><!--end:Menu item--><!--begin:Menu item-->
+                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="{{asset('metronic/pages/user-profile/projects.html')}}"  ><span  class="menu-bullet" ><span class="bullet bullet-dot"></span></span><span  class="menu-title" >Tambah Data Cabang</span></a><!--end:Menu link--></div><!--end:Menu item--><!--begin:Menu item-->
                                         </div><!--end:Menu sub-->
                                     </div><!--end:Menu item--><!--begin:Menu item-->
+                                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion"><!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="fa-solid fa-bell-concierge"><span class="path1"></span><span class="path2"></span></i></span><span class="menu-title">Layanan (TBA)</span><span class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
+                                        <div class="menu-sub menu-sub-accordion"><!--begin:Menu item-->
+                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="{{asset('metronic/pages/social/feeds.html')}}"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Lihat Layanan</span></a><!--end:Menu link--></div><!--end:Menu item--><!--begin:Menu item-->
+                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="{{asset('metronic/pages/social/activity.html')}}"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Tambah Layanan</span></a><!--end:Menu link--></div><!--end:Menu item--><!--begin:Menu item-->
+                                        </div><!--end:Menu sub-->
+                                    </div><!--end:Menu item--><!--begin:Menu item-->
+                                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion"><!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="fa-solid fa-address-card"><span class="path1"></span><span class="path2"></span></i></span><span class="menu-title">Tentang Kami</span><span class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
+                                        <div class="menu-sub menu-sub-accordion menu-active-bg"><!--begin:Menu item-->
+                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="/admin/aboutUs"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Lihat Tentang Kami</span></a><!--end:Menu link--></div><!--end:Menu item--><!--begin:Menu item-->
+                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="{{route ('aboutUs.create') }}"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Tambah Data Tentang Kami</span></a><!--end:Menu link--></div><!--end:Menu item-->
+                                        </div><!--end:Menu sub-->
+                                    </div><!--end:Menu item--><!--begin:Menu item-->
+                                    <!--begin:Menu item-->
+                                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion"><!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="fa-solid fa-person"><span class="path1"></span><span class="path2"></span></i></span><span class="menu-title">Anggota</span><span class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
+                                        <div class="menu-sub menu-sub-accordion menu-active-bg"><!--begin:Menu item-->
+                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="{{asset('metronic/pages/blog/home.html')}}"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Lihat Anggota</span></a><!--end:Menu link--></div><!--end:Menu item--><!--begin:Menu item-->
+                                            <div class="menu-item"><!--begin:Menu link--><a class="menu-link" href="{{asset('metronic/pages/blog/post.html')}}"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Tambah Anggota</span></a><!--end:Menu link--></div><!--end:Menu item-->
+                                        </div><!--end:Menu sub-->
+                                    </div><!--end:Menu item-->
                                 </div>
                                 <!--end::Menu-->
                             </div>
@@ -406,7 +425,7 @@ License: For each use you must have a valid license purchased only from above li
                                 <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3 ">
                                     <!--begin::Title-->
                                     <h1 class="page-heading d-flex text-gray-900 fw-bold fs-3 flex-column justify-content-center my-0">
-                                        Disini akan diisi konten untuk dashboard Karyawan
+                                        Data Tentang Kami PT. Telmark Integrasi Indonesia
                                     </h1>
                                     <!--end::Title-->
 
@@ -422,6 +441,97 @@ License: For each use you must have a valid license purchased only from above li
                         <!--end::Toolbar-->
 
                         <!--begin::Content-->
+                        <div class="card mb-5 mb-xl-8">
+                            <!--begin::Header-->
+                            <div class="card-header border-0 pt-5">
+                                <h3 class="card-title align-items-start flex-column">
+                                    <span class="card-label fw-bold fs-3 mb-1">Tentang PT. Telmark Integrasi Indonesia</span>
+                        
+                                    <span class="text-muted mt-1 fw-semibold fs-7">Menampilkan tentang perusahaan Telmark di Indonesia.</span>
+                                </h3>
+                                <div class="card-toolbar">
+                                    <a href="{{ route('aboutUs.create') }}" class="btn btn-sm btn-light-primary"> 
+                                        <i class="fa-solid fa-plus"></i>              Data belum tersedia? Tambahkan disini
+                                    </a>
+                                </div>
+                            </div>
+                            <!--end::Header-->
+                            <!-- begin::table content-->
+                            <div class="card-body py-3">
+                                @if ($message = Session::get('success'))
+                                    <div class="alert alert-success">
+                                        <p>{{ $message }}</p>   
+                                </div>
+                                @endif 
+                                @if ($message = Session::get('error'))
+                                    <div class="alert alert-danger">
+                                        <p>{{ $message }}</p>
+                                    </div>
+                                @endif 
+                                <!--begin::Table container-->
+                                <div class="table-responsive">
+                                    <!--begin::Table-->
+                                    <table class="table align-middle gs-0 gy-4">
+                                        <!--begin::Table head-->
+                                        <thead>
+                                            <tr class="fw-bold text-muted bg-light">
+                                                <th class="ps-4 min-w-150px">Jenis Tentang Kami</th>
+                                                <th class="min-w-200px">Data</th>
+                                                <th class="min-w-200px"></th>
+                                                <th class="min-w-250px text-end rounded-end"></th>
+                                            </tr>
+                                        </thead>
+                                        <!--end::Table head-->
+                                        <!-- begin:: Table body-->
+                                        <tbody>
+                                            @foreach($data as $location)
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="d-flex justify-content-start flex-column">
+                                                                @if($location->jenis_data == 'Overview')
+                                                                    <a href="{{ route('aboutUs.show', $location->aboutUsID )}}" class="text-gray-900 fw-bold text-hover-primary mb-1 fs-6">Gambaran Umum Perusahaan</a>
+                                                                    <span class="text-muted fw-semibold text-muted d-block fs-7">Judul: {{ $location->judul }}</span>
+                                                                @endif
+                                                                @if($location->jenis_data == 'Visi')
+                                                                    <a href="{{ route('aboutUs.show', $location->aboutUsID )}}" class="text-gray-900 fw-bold text-hover-primary mb-1 fs-6">Visi Perusahaan</a>
+                                                                    <span class="text-muted fw-semibold text-muted d-block fs-7">Judul: {{ $location->judul }}</span>
+                                                                @endif
+                                                                @if($location->jenis_data == 'Misi')
+                                                                    <a href="{{ route('aboutUs.show', $location->aboutUsID )}}" class="text-gray-900 fw-bold text-hover-primary mb-1 fs-6">Misi Perusahaan</a>
+                                                                    <span class="text-muted fw-semibold text-muted d-block fs-7">Judul: {{ $location->judul }}</span>
+                                                                @endif
+                                                                @if($location->jenis_data == 'Featured')
+                                                                    <a href="{{ route('aboutUs.show', $location->aboutUsID )}}" class="text-gray-900 fw-bold text-hover-primary mb-1 fs-6">Keunggulan Perusahaan</a>
+                                                                    <span class="text-muted fw-semibold text-muted d-block fs-7">Judul: {{ $location->judul }}</span>
+                                                                @endif
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="{{ route('aboutUs.show', $location->aboutUsID )}}" class="text-gray-900 fw-bold text-hover-primary d-block mb-1 fs-6">{{ $location->data }}</a>
+                                                    </td>
+                                                    <td>
+                                                        <td class="text-end">
+                                                            <form action="{{ route('aboutUs.destroy', $location->aboutUsID ) }}" method="post">
+                                                                <button class="btn btn-primary"><a href="{{ route('aboutUs.show', $location->aboutUsID) }}"><i class="fa-solid fa-eye"></i></a></button>
+                                                                <button class="btn btn-success"><a href="{{ route('aboutUs.edit', $location->aboutUsID) }}"><i class="fa-solid fa-pencil"></i></a></button>
+                                                                @csrf
+                                                                    @method('DELETE')
+                                                                    <button class="btn btn-danger">
+                                                                        <a href="{{ route('aboutUs.destroy', $location->aboutUsID)}}">
+                                                                        <i class="fa-solid fa-trash"></i></a>
+                                                                    </button>
+                                                            </form>
+                                                        </td>
+                                                    </td>
+                                                </tr> 
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
                         <!--end::Content-->
 
                     </div>
@@ -435,7 +545,7 @@ License: For each use you must have a valid license purchased only from above li
                             <!--begin::Copyright-->
                             <div class="text-gray-900 order-2 order-md-1">
                                 <span class="text-muted fw-semibold me-1">2024&copy;</span>
-                                <a href="https://keenthemes.com/" target="_blank" class="text-gray-800 text-hover-primary">Telmark. </a>
+                                <a href="https://keenthemes.com/" target="_blank" class="text-gray-800 text-hover-primary">Telmark</a>
                             </div>
                             <!--end::Copyright-->
 

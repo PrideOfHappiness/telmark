@@ -19,6 +19,7 @@ class Location extends Model
         'no_telp',
         'email',
         'url_maps',
+        'status',
     ];
 
     public function setLocationIDforUsers(){
